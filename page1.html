@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    document.addEventListener("click", function() {
+      window.location.href = "page2.html";
+    });
+  </script>
+<body>
+  <div class="main">
+    <h1>Чтобы читать дальше,<br> нажми на экран.</h1>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+  <script src="script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  
+</body>
+</html>
